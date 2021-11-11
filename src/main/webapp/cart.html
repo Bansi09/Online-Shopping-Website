@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LIME | E-commerce Website Design </title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="./css/lightslider.css">
+	<script src="js/JQuery.js"></script>
+	<script src="js/lightslider.js"></script>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<nav>
+		<div class="links">
+			<div class="social">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="phone">
+				<span>Call +12345678</span>
+			</div>
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="logo">
+				<img src="./images/lime logo.png">
+			</a>
+			<!--menu-icon-->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="index.html#shop">Shop</a>
+					<span class="sale-label">Sale</span>
+				</li>
+				<li><a href="login.jsp">Login</a></li>
+			</ul>
+
+			<div class="right-menu">
+				<a href="javascript:void(0)" class="search"><i class="fas fa-search"></i></a>
+				
+				<a href="#"><i class="fas fa-shopping-cart"><span class="num-cart">0</span></i></a>
+			</div>
+		</div>
+	</nav>
+<!-- Cart items details-->
+
+<div class="products-container">
+	<div class="product-header">
+		<h5 class="product-title">PRODUCT</h5>
+		<h5 class="price">PRICE</h5>
+		<h5 class="quantity">QUANTITY</h5>
+		<h5 class="total">SUBTOTAL</h5>
+	</div>
+	<div class="products">
+		
+	</div>
+</div>
+
+</div>
+
+
+<!--footer-->
+<footer>
+	<span class="copyright">
+		Copyright 2020 - IP
+	</span>
+</footer>
+<script type="text/javascript">
+
+	/*fix nav bar*/
+	$(window).scroll(function(){
+		if($(document).scrollTop()>50){
+			$('.navigation').addClass('fix-nav');
+		}
+		else
+		{
+			$('.navigation').removeClass('fix-nav');
+		}
+	})
+
+	/*Responsive-toggle*/
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('.navigation').toggleClass('active')
+		})
+	})
+	</script>
+	<script src="js/main.js"></script>
+
+	  <script type="text/javascript">
+		/* For Search Bar*/
+	$(document).on('click','.search',function(){
+		$('.search-bar').addClass('search-bar-active')
+	});
+	$(document).on('click','.search-cancel',function(){
+		$('.search-bar').removeClass('search-bar-active')
+	});
+</script>
+</body>
+</html>

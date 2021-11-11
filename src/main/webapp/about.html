@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LIME | E-commerce Website Design</title>
+<link rel="stylesheet" type="text/css" href="./css/about.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+<script src="js/JQuery.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav>
+		<div class="links">
+			<div class="social">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="phone">
+				<span>Call +12345678</span>
+			</div>
+			<div id="result">
+			</div>
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="logo">
+				<img src="images/lime logo.png">
+			</a>
+			<!--menu-icon-->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#shop">Shop</a>
+					<span class="sale-label">Sale</span>
+				</li>
+		
+				<li><a href="login.jsp">Login</a></li>
+			</ul>
+
+			<div class="right-menu">
+				<a href="javascript:void(0)" class="search"><i class="fas fa-search"></i></a>
+				
+				<a href="cart.html"><i class="fas fa-shopping-cart"><span class="num-cart">0</span></i></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Lime is a one stop shop for all your fashion and lifestyle needs. Lime aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.</p>
+
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/ban.jpeg" alt="Bansari" style="width:100%">
+      <div class="container">
+        <h2>Bansari Vora</h2>
+        <p class="title">Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>bansari.vora_19@sakec.ac.in</p>
+     
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/shubh.jpeg" alt="Shubham" style="width:100%">
+      <div class="container">
+        <h2>Shubham Rane</h2>
+        <p class="title">Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>shubham.rane_19@sakec.ac.in</p>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/dhruv.jpeg" alt="Dhruv" style="width:100%">
+      <div class="container">
+        <h2>Dhruv Totre</h2>
+        <p class="title">Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>dhruv.totre_19@sakec.ac.in</p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+	/*fix nav bar*/
+	$(window).scroll(function(){
+		if($(document).scrollTop()>50){
+			$('.navigation').addClass('fix-nav');
+		}
+		else
+		{
+			$('.navigation').removeClass('fix-nav');
+		}
+	})
+
+	/*Responsive-toggle*/
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('.navigation').toggleClass('active')
+		})
+	})
+	</script>
+	<script src="js/main.js"></script>
+
+	  <script type="text/javascript">
+		/* For Search Bar*/
+	$(document).on('click','.search',function(){
+		$('.search-bar').addClass('search-bar-active')
+	});
+	$(document).on('click','.search-cancel',function(){
+		$('.search-bar').removeClass('search-bar-active')
+	});
+</script>
+
+</body>
+</html>

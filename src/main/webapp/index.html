@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LIME | E-commerce Website Design </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<script src="js/JQuery.js"></script>
+	<script src="js/lightslider.js"></script>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<div class="links">
+			<div class="social">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="phone">
+				<span>Call +12345678</span>
+			</div>
+			<div id="result">
+			</div>
+		</div>
+		<div class="navigation">
+			<a href="index.html" class="logo">
+				<img src="images/lime logo.png">
+			</a>
+			<!--menu-icon-->
+			<div class="toggle"></div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#shop">Shop</a>
+					<span class="sale-label">Sale</span>
+				</li>
+		
+				<li><a href="login.jsp">Login</a></li>
+			</ul>
+
+			<div class="right-menu">
+				<a href="javascript:void(0)" class="search"><i class="fas fa-search"></i></a>
+				
+				<a href="cart.html"><i class="fas fa-shopping-cart"><span class="num-cart">0</span></i></a>
+			</div>
+		</div>
+	</nav>
+	<div class="search-bar">
+		<div class="search-input">
+			<input type="text" placeholder="Search For Product" name="search">
+			<a href="javascript:void(0) " class="search-cancel">
+				<i class="fas fa-times"></i>
+			</a>
+		</div>
+	</div>
+  	<!-- Login form or Admin form -->
+  	<!-- slider img-->
+  	<ul id="adaptive" class="cs-hidden">
+  <li class="item-a">
+<div class="slider-box slide-1">
+  			<div id="slider">
+  				<img src="images/slider3.png">
+  			</div>
+</div>
+</li>
+
+ <li class="item-b">
+<div class="slider-box slide-2">
+  			<div id="slider">
+  				<img src="images/slider1.png">
+  			</div>
+</div>
+</li>
+
+ <li class="item-c">
+<div class="slider-box slide-3">
+  			<div id="slider">
+  				<img src="images/slider2.png">  		
+  			</div>
+</div>
+</li>
+</ul>
+  			<div class="indicators">
+  				<span id="btn1" class="active"></span>
+  				<span id="btn2"></span>
+  				<span id="btn3"></span>
+  			</div>
+  <!-- Featured category -->
+  	<div class="feature-heading">
+  		<h2>Featured Categories</h2>
+  	</div>
+
+  	<ul id="autoWidth" class="cs-hidden">
+  <li class="item">
+  		<div class="feature-box">
+  		<a href="#shop">
+  			<img src="images/shirt4.jpeg">
+  		</a>
+  	</div>
+  	<span>Hoodies</span>
+  </li>
+
+  <li class="item">
+  		<div class="feature-box">
+  		<a href="#shop">
+  			<img src="images/shirt3.PNG">
+  		</a>
+  	</div>
+  	<span>T-shirts</span>
+  </li>
+
+  <li class="item">
+  		<div class="feature-box">
+  		<a href="#shop">
+  			<img src="images/shoe7.PNG">
+  		</a>
+  	</div>
+  	<span>Shoes</span>
+  </li>
+
+  <li class="item">
+  		<div class="feature-box">
+  		<a href="#shop">
+  			<img src="images/kur1.jpeg">
+  		</a>
+  	</div>
+  	<span>Kurtis</span>
+  </li>
+
+  <li class="item">
+  		<div class="feature-box">
+  		<a href="#shop">
+  			<img src="images/watch1.jpg">
+  		</a>
+  	</div>
+  	<span>Watches</span>
+  </li>
+</ul>
+
+<!-- New Arrivals -->
+	  <section id="shop" class="new-arrival">
+	  	<div class="arrival-heading">
+	  		<strong>New Arrivals</strong>
+	  		<p>We Provide You New Design Fashion Clothes</p>
+	  	</div>
+
+	  	<!--product container and product detail html goes here-->
+	  	<div class="product-container">
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			
+	  				<!-- Cart html pg link here -->
+	  			<a href="#" class="add-cart cart1">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/drawstringhoodie.jpg">
+	  			</div>
+<!-- link product det page-->
+	  			<div class="product-details">
+	  				<a href="product_det.html" class="p-name" >Drawstring Hoodie</a>
+	  					<span class="p-price">Rs. 1000.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart2">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/whiteshirt.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det2.html" class="p-name" >White Shirt</a>
+	  					<span class="p-price">Rs. 800.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart3">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/kurti.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det3.html" class="p-name" >Kurti</a>
+	  					<span class="p-price">Rs. 500.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart4">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/basictshirt.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det4.html" class="p-name" >Basic T-shirt</a>
+	  					<span class="p-price">Rs. 700.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart5">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/converseshoes.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det5.html" class="p-name" >Converse Shoes</a>
+	  					<span class="p-price">Rs. 1500.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart6">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/classichoodie.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det6.html" class="p-name" >Classic Hoodie</a>
+	  					<span class="p-price">Rs. 1200.00</span>
+	  			</div>
+	  		</div>
+
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart7">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/watch.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det7.html" class="p-name" >Watch</a>
+	  					<span class="p-price">Rs. 2000.00</span>
+	  			</div>
+	  		</div>
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart8">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/shoes.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det8.html" class="p-name" >Shoes</a>
+	  					<span class="p-price">Rs. 1000.00</span>
+	  			</div>
+	  		</div>
+	  		<div class="product-box">
+	  			<div class="product-img">
+	  			<a href="#" class="add-cart cart9">
+	  				<i class="fas fa-shopping-cart"></i>
+	  			</a>
+	  			<img src="images/classictshirt.jpg">
+	  			</div>
+
+	  			<div class="product-details">
+	  				<a href="product_det9.html" class="p-name" >Classic T-shirt</a>
+	  					<span class="p-price">Rs. 500.00</span>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </section>
+<!--services-->
+<section class="services">
+	<div class="services-box">
+		<i class="fas fa-shipping-fast"></i>
+		<span>Free Shipping</span>
+		<p>Free Shipping For all orders</p>
+	</div>
+	<div class="services-box">
+		<i class="fas fa-headphones-alt"></i>
+		<span>Support 24/7</span>
+		<p>We support 24 hours a day</p>
+	</div>
+	<div class="services-box">
+		<i class="fas fa-sync"></i>
+		<span>100% Money Back</span>
+		<p>15 days Return Policy</p>
+	</div>
+</section>
+
+<!--footer-->
+<footer>
+	<span class="copyright">
+		Copyright 2020 - IP
+	</span>
+</footer>
+
+
+<script type="text/javascript">
+		/* For Search Bar*/
+	$(document).on('click','.search',function(){
+		$('.search-bar').addClass('search-bar-active')
+	});
+	$(document).on('click','.search-cancel',function(){
+		$('.search-bar').removeClass('search-bar-active')
+	});
+
+	/* For slider-imgs*/
+	var slider=document.getElementById("slider");
+	var btn1=document.getElementById("btn1");
+	var btn2=document.getElementById("btn2");
+	var btn3=document.getElementById("btn3");
+
+	btn1.onclick = function(){
+		slider.style.transform = "translateX(0px)";
+		btn1.classList.add("active");
+		btn2.classList.remove("active");
+		btn3.classList.remove("active");
+	}
+	btn2.onclick = function(){
+		slider.style.transform = "translateX(-100%)";
+		btn1.classList.remove("active");
+		btn2.classList.add("active");
+		btn3.classList.remove("active");
+	}
+	btn3.onclick = function(){
+		slider.style.transform = "translateX(-200%)";
+		btn1.classList.remove("active");
+		btn2.classList.remove("active");
+		btn3.classList.add("active");
+	}
+	 $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
+	 /* for full slider side arrows*/
+	 $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+
+	/*fix nav bar*/
+	$(window).scroll(function(){
+		if($(document).scrollTop()>50){
+			$('.navigation').addClass('fix-nav');
+		}
+		else
+		{
+			$('.navigation').removeClass('fix-nav');
+		}
+	})
+
+	/*Responsive-toggle*/
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('.navigation').toggleClass('active')
+		})
+	})
+	</script>
+	<script src="js/main.js"></script>
+	<script>
+		var data = localStorage.getItem('myresponse');
+		document.getElementById('result').innerHTML= data;
+	</script>
+</body>
+</html>
